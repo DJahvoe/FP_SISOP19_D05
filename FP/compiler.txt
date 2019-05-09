@@ -1,0 +1,7 @@
+gcc -o [exe] [fileC] -pthread -lmpg123 -lao
+
+gcc -Wall `pkg-config fuse --cflags` [file.c] -o [output] `pkg-config fuse --libs`
+
+sudo fuser -km [dir]
+
+sudo umount -l [dir]

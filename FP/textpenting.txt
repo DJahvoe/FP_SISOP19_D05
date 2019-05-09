@@ -1,0 +1,7 @@
+gcc -Wall `pkg-config fuse --cflags` FUSEMP3_3.c -o FUSEMP3 `pkg-config fuse --libs`
+
+gcc -Wall `pkg-config fuse --cflags` template.c -o template `pkg-config fuse --libs`
+
+gcc -O2 -o DejahvoePlayer menu.c -pthread -lao -lmpg123
+
+find . -iname "*.mp3" -exec mpg123 {} \;
