@@ -92,20 +92,14 @@ Note: playlist bisa banyak
     <img src="/tutorial/1.JPG" width="70%" alt="step1" title="Ubah FUSE">
   </p>
     <li>Compile FUSE yang sudah diedit " gcc -Wall `pkg-config fuse --cflags` FUSEMP3_3.c -o FUSEMP3 `pkg-config fuse --libs` "</li>
-  <p align="center">
-    <img src="/tutorial/2.JPG" width="70%" alt="step2" title="Compile FUSE">
-  </p>
     <li>Compile ulang menu.c " gcc -O2 -o DejahvoePlayer menu.c -pthread -lao -lmpg123 "</li>
-  <p align="center">
-    <img src="/tutorial/3.JPG" width="70%" alt="step3" title="Compile Music Player">
-  </p>
     <li>Run FUSE ke direktori yang berisi file-file mp3 yang akan diplay </li>
   <p align="center">
-    <img src="/tutorial/4.JPG" width="70%" alt="step4" title="Run FUSE">
+    <img src="/tutorial/2.JPG" width="70%" alt="step4" title="Run FUSE">
   </p>
      <li>Jalankan DejahvoePlayer inputkan path folder FUSE sebelumnya </li>
   <p align="center">
-    <img src="/tutorial/5.JPG" width="70%" alt="step5" title="Run Player">
+    <img src="/tutorial/3.gif" width="70%" alt="step5" title="Run Player">
   </p>
     <li>Enjoy your musics </li>
   </ol>
