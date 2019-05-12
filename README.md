@@ -83,3 +83,29 @@ Note: playlist bisa banyak
       8. Untuk melakukan fitur `prev`, hanya perlu menggeser `counter` ke kiri
       9. Untuk melakukan fitur `list lagu`, hanya perlu melakukan `display` seluruh isi `local array`
       10. Apabila User menekan tombol selain `pause` pada saat lagu sedang di-play, maka sistem akan menganggap user melakukan `Interrupt` dan menghentikan lagu (bukan `pause`) serta menjalankan perintah sesuai fitur yang dipilih oleh user (tombol yang ditekan user)
+
+- Tutorial play <br>
+  <ol type="1">
+    <li>Download Repo</li>
+    <li>Ubah file FUSEMP3_3.c sesuaikan user dengan user laptop anda</li> 
+  <p align="center">
+    <img src="/tutorial/1.JPG" width="70%" alt="step1" title="Ubah FUSE">
+  </p>
+    <li>Compile FUSE yang sudah diedit " gcc -Wall `pkg-config fuse --cflags` FUSEMP3_3.c -o FUSEMP3 `pkg-config fuse --libs` "</li>
+  <p align="center">
+    <img src="/tutorial/2.JPG" width="70%" alt="step2" title="Compile FUSE">
+  </p>
+    <li>Compile ulang menu.c " gcc -O2 -o DejahvoePlayer menu.c -pthread -lao -lmpg123 "</li>
+  <p align="center">
+    <img src="/tutorial/3.JPG" width="70%" alt="step3" title="Compile Music Player">
+  </p>
+    <li>Run FUSE ke direktori yang berisi file-file mp3 yang akan diplay </li>
+  <p align="center">
+    <img src="/tutorial/4.JPG" width="70%" alt="step4" title="Run FUSE">
+  </p>
+     <li>Jalankan DejahvoePlayer inputkan path folder FUSE sebelumnya </li>
+  <p align="center">
+    <img src="/tutorial/5.JPG" width="70%" alt="step5" title="Run Player">
+  </p>
+    <li>Enjoy your musics </li>
+  </ol>
