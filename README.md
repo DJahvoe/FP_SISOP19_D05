@@ -95,7 +95,7 @@ Note: playlist bisa banyak
     <li>Compile ulang menu.c " gcc -O2 -o DejahvoePlayer menu.c -pthread -lao -lmpg123 "</li>
     <li>Run FUSE ke direktori yang berisi file-file mp3 yang akan diplay </li>
   <p align="center">
-    <img src="/tutorial/2.JPG" width="70%" alt="step4" title="Run FUSE">
+    <img src="/tutorial/2.jpg" width="70%" alt="step4" title="Run FUSE">
   </p>
      <li>Jalankan DejahvoePlayer inputkan path folder FUSE sebelumnya </li>
   <p align="center">
